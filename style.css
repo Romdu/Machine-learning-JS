@@ -1,0 +1,81 @@
+@charset 'UTF-8';
+
+@font-face {
+  font-family: 'CFP';
+
+    src: local('☺'), url('./fonts/CFP.ttf') format('truetype');
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 100px 0;
+  background: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body nav {
+  width: 100%;
+  height: 100px;
+  background: #3b3b3b;
+}
+
+body nav .logo {
+  position: absolute;
+  top: -130px;
+  left: -130px;
+  width: 260px;
+  height: 260px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background: #3b3b3b;
+}
+
+body nav .logo img {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  width: 40%;
+}
+
+body nav .titre {
+  font-family: CFP;
+  font-size: 70px;
+  width: 100%;
+  text-align: center;
+  color: #a8c533;
+}
+
+body table {
+  border-collapse: collapse;
+}
+
+body table .case {
+  width: 20px;
+  height: 20px;
+}
+
+body table .mur {
+  background-image: url('./img/brick.png');
+}
+
+body table .fourmilliere {
+  background: red;
+}
+
+body table .nourriture {
+  background: cyan;
+}
+
+body table .vide,
+body table .point {
+  background-image: url(./img/floor.jpg);
+  background-size: cover;
+}
